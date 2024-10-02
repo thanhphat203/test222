@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Giao Dịch OKX Giả Lập</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>OKX Giả Lập</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Thị Trường</a></li>
+                <li><a href="#">Giao Dịch</a></li>
+                <li><a href="#">Ví</a></li>
+                <li><a href="#">Hỗ Trợ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="market">
+            <h2>Thị Trường</h2>
+            <table>
+                <tr>
+                    <th>Tên Cặp</th>
+                    <th>Giá</th>
+                    <th>Thay Đổi</th>
+                </tr>
+                <tr>
+                    <td>BTC/USDT</td>
+                    <td class="price">30,000 USDT</td>
+                    <td class="change">+5%</td>
+                </tr>
+                <tr>
+                    <td>ETH/USDT</td>
+                    <td class="price">2,000 USDT</td>
+                    <td class="change">+3%</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="trade">
+            <h2>Giao Dịch</h2>
+            <form id="trade-form">
+                <label for="pair">Chọn Cặp Giao Dịch:</label>
+                <select id="pair">
+                    <option value="btc_usdt">BTC/USDT</option>
+                    <option value="eth_usdt">ETH/USDT</option>
+                </select>
+
+                <label for="amount">Số Lượng:</label>
+                <input type="number" id="amount" placeholder="Nhập số lượng" required>
+
+                <button type="submit">Mua</button>
+                <button type="submit">Bán</button>
+            </form>
+            <div id="result-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 OKX Giả Lập. Bảo Lưu mọi quyền.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
